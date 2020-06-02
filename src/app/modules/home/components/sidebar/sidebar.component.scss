@@ -1,0 +1,17 @@
+.sidebar {
+  .brand-logo {
+    margin: 10px;
+  }
+
+  .user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 0 auto 10px;
+    //box-shadow: 1px 3px 11px #ccc;
+    border-bottom: 2px;
+    //border-radius: 1em;
+  }
+}
