@@ -1,15 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
-import { HomeComponent } from './modules/home/pages/home.component';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
-  declarations: [AppComponent, HomeLayoutComponent, SidebarComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, HomeModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
