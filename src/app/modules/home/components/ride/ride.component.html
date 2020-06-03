@@ -23,7 +23,7 @@
 
   <div class="favorite-list">
     <span class="favorite-title">Favoritos</span>
-    <div class="favorite-item" *ngFor="let favorite of favoriteList">
+    <div class="favorite-item" *ngFor="let favorite of favoriteList" (click)="changeDirection(favorite)">
       <img src="https://via.placeholder.com/100" alt="{{ favorite.favorite_name }}" class="favorite-icon" />
       <div class="favorite-details">
         <span class="favorite-name">{{ favorite.favorite_name }}</span>

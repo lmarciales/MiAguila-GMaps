@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { AddressRoute, DefaultRoute } from '../../../../data/schema/default-route';
 
 @Component({
   selector: 'app-maps',
@@ -6,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maps.component.scss'],
 })
 export class MapsComponent implements OnInit {
-  constructor() {}
+  @Input() defaultRoute: DefaultRoute;
+  public initialAddress: AddressRoute;
+  public initialZoom: number;
+
+  constructor() {
+    this.initialAddress = {
+      lat: 4.72,
+      lng: -74.13,
+    };
+
+    this.initialZoom = 15;
+  }
 
   ngOnInit(): void {}
 }

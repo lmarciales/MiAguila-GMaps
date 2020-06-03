@@ -1,1 +1,3 @@
-<p>maps works!</p>
+<agm-map [latitude]="initialAddress.lat" [longitude]="initialAddress.lng" [zoom]="initialZoom">
+  <agm-direction [origin]="defaultRoute.origin" [destination]="defaultRoute.destination"></agm-direction>
+</agm-map>

@@ -101,37 +101,61 @@
     {
       "id": 1,
       "favorite_name": "Ivesur",
-      "favorite_address": "Cra. 56 #19-84, Bogotá, Colombia"
+      "favorite_address": "Cra. 56 #19-84, Bogotá, Colombia",
+      "lat": 4.6,
+      "lng": -74.13
     },
     {
       "id": 2,
       "favorite_name": "Mi Águila",
-      "favorite_address": "Carrera 15 80-90, Bogotá, Colombia"
+      "favorite_address": "Carrera 15 80-90, Bogotá, Colombia",
+      "lat": 4.61,
+      "lng": -74.13
     },
     {
       "id": 3,
       "favorite_name": "Aeropuerto El Dorado",
-      "favorite_address": "Bogotá, Colombia"
+      "favorite_address": "Bogotá, Colombia",
+      "lat": 4.62,
+      "lng": -74.13
     },
     {
       "id": 4,
       "favorite_name": "Work",
-      "favorite_address": "Bogotá, Colombia"
+      "favorite_address": "Bogotá, Colombia",
+      "lat": 4.63,
+      "lng": -74.13
     },
     {
       "id": 5,
       "favorite_name": "Home",
-      "favorite_address": "Bogotá, Colombia"
+      "favorite_address": "Bogotá, Colombia",
+      "lat": 4.64,
+      "lng": -74.13
     },
     {
       "id": 6,
       "favorite_name": "Sweetheart",
-      "favorite_address": "Bogotá, Colombia"
+      "favorite_address": "Bogotá, Colombia",
+      "lat": 4.65,
+      "lng": -74.13
     },
     {
       "id": 7,
       "favorite_name": "Dads work",
-      "favorite_address": "Bogotá, Colombia"
+      "favorite_address": "Bogotá, Colombia",
+      "lat": 4.67,
+      "lng": -74.13
     }
-  ]
+  ],
+  "default-route": {
+    "origin": {
+      "lat": 4.72,
+      "lng": -74.13
+    },
+    "destination": {
+      "lat": 4.6672736,
+      "lng": -74.0586661
+    }
+  }
 }

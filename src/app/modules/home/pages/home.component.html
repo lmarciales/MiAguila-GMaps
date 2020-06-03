@@ -1,5 +1,5 @@
 <section class="main">
   <app-sidebar (toggleRideView)="getRideViewToggle($event)"></app-sidebar>
-  <app-maps></app-maps>
-  <app-ride *ngIf="rideView"></app-ride>
+  <app-ride *ngIf="rideView" [defaultRoute]="defaultRoute"></app-ride>
+  <app-maps [defaultRoute]="defaultRoute"></app-maps>
 </section>

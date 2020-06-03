@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { DefaultRoute } from '../../../../data/schema/default-route';
 import { FavoriteList } from '../../../../data/schema/favorite-list';
 import { RideProfile } from '../../../../data/schema/ride-profile';
 import { StepsData } from '../../../../data/schema/steps-data';
@@ -15,6 +16,9 @@ export class RideComponent implements OnInit {
   public stepData: StepsData[];
   public favoriteList: FavoriteList[];
   public stepNumber: number;
+
+  @Input() defaultRoute: DefaultRoute;
+  @Output() newRoute = new EventEmitter<DefaultRoute>();
 
   constructor(private router: Router, private rest: RestService) {
     router.navigate(['ride/origin']);
@@ -49,5 +53,20 @@ export class RideComponent implements OnInit {
       this.stepNumber = stepNumber;
       this.router.navigate([stepRouter]);
     }
+  }
+
+  public changeDirection(favorite: FavoriteList) {
+    if (this.stepNumber === 1) {
+      this.defaultRoute.origin = {
+        lat: favorite.lat,
+        lng: favorite.lng,
+      };
+    } else {
+      this.defaultRoute.destination = {
+        lat: favorite.lat,
+        lng: favorite.lng,
+      };
+    }
+    this.newRoute.emit(this.defaultRoute);
   }
 }
