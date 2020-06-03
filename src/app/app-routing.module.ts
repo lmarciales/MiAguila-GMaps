@@ -6,6 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+    children: [
+      {
+        path: 'ride',
+        loadChildren: () => import('./modules/home/home.module').then((m) => m.HomeModule),
+      },
+    ],
   },
 ];
 

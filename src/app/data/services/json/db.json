@@ -1,5 +1,10 @@
 {
-  "user-data": {},
+  "user-data": {
+    "id": 1,
+    "user_name": "Jorge Solano",
+    "user_desc": "Beneficiario",
+    "user_img": "https://via.placeholder.com/100"
+  },
   "nav-links": [
     {
       "id": 1,
@@ -35,6 +40,98 @@
       "id": 7,
       "item_name": "Cerrar Sesión",
       "fa_icon": "fa-sign-out-alt"
+    }
+  ],
+  "ride-profile": [
+    {
+      "id": 1,
+      "profile_name": "Para mi",
+      "profile_img": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 2,
+      "profile_name": "Colega",
+      "profile_img": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 3,
+      "profile_name": "Invitado",
+      "profile_img": "https://via.placeholder.com/100"
+    }
+  ],
+  "steps-data": [
+    {
+      "id": 1,
+      "step_number": 1,
+      "step_label": "Origen",
+      "step_route": "/ride/origin"
+    },
+    {
+      "id": 2,
+      "step_number": 2,
+      "step_label": "Destino",
+      "step_route": "/ride/destination"
+    },
+    {
+      "id": 3,
+      "step_number": 3,
+      "step_label": "",
+      "step_route": ""
+    },
+    {
+      "id": 4,
+      "step_number": 4,
+      "step_label": "",
+      "step_route": ""
+    },
+    {
+      "id": 5,
+      "step_number": 5,
+      "step_label": "",
+      "step_route": ""
+    },
+    {
+      "id": 6,
+      "step_number": 6,
+      "step_label": "",
+      "step_route": ""
+    }
+  ],
+  "favorite-list": [
+    {
+      "id": 1,
+      "favorite_name": "Ivesur",
+      "favorite_address": "Cra. 56 #19-84, Bogotá, Colombia"
+    },
+    {
+      "id": 2,
+      "favorite_name": "Mi Águila",
+      "favorite_address": "Carrera 15 80-90, Bogotá, Colombia"
+    },
+    {
+      "id": 3,
+      "favorite_name": "Aeropuerto El Dorado",
+      "favorite_address": "Bogotá, Colombia"
+    },
+    {
+      "id": 4,
+      "favorite_name": "Work",
+      "favorite_address": "Bogotá, Colombia"
+    },
+    {
+      "id": 5,
+      "favorite_name": "Home",
+      "favorite_address": "Bogotá, Colombia"
+    },
+    {
+      "id": 6,
+      "favorite_name": "Sweetheart",
+      "favorite_address": "Bogotá, Colombia"
+    },
+    {
+      "id": 7,
+      "favorite_name": "Dads work",
+      "favorite_address": "Bogotá, Colombia"
     }
   ]
 }

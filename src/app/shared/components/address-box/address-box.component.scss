@@ -1,0 +1,26 @@
+.department {
+  margin: 0 15px 10px;
+  font-size: 14px;
+}
+
+.address-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #bfdebf;
+
+  input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+
+    &::placeholder {
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  }
+}
