@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NavLink } from '../../../../data/schema/nav-link';
 import { RestService } from '../../../../data/services/rest.service';
 
@@ -11,8 +11,11 @@ export class SidebarComponent implements OnInit {
   public navLinksList: NavLink[];
   public activeNav: number;
 
+  @Output() toggleRideView = new EventEmitter<boolean>();
+
   constructor(private rest: RestService) {
     this.getNavLinkData();
+    this.activeNav = 1;
   }
 
   ngOnInit(): void {}
@@ -25,5 +28,11 @@ export class SidebarComponent implements OnInit {
 
   public getSelectedNavItem(itemId: number) {
     this.activeNav = itemId;
+
+    if (this.activeNav === 1) {
+      this.toggleRideView.emit(true);
+    } else {
+      this.toggleRideView.emit(false);
+    }
   }
 }
