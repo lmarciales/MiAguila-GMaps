@@ -61,11 +61,19 @@
         &.active {
           color: #bfdebf;
         }
+
+        &.disable {
+          cursor: no-drop;
+        }
       }
 
       .step-label {
         font-size: 12px;
         width: 200px;
+
+        &.hide {
+          display: none;
+        }
       }
     }
   }
@@ -84,7 +92,8 @@
     .favorite-item {
       display: flex;
       align-items: center;
-      margin: 10px;
+      margin: 15px;
+      cursor: pointer;
 
       img {
         width: 25px;
@@ -124,7 +133,7 @@
       display: grid;
       height: 50px;
       width: 50px;
-      border-radius: 1px;
+      border-radius: 2px;
       background: #e1e1e1;
       cursor: pointer;
     }

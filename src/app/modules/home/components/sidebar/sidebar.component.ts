@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NavLink } from '../../../../data/schema/nav-link';
+import { UserData } from '../../../../data/schema/user-data';
 import { RestService } from '../../../../data/services/rest.service';
 
 @Component({
@@ -9,12 +10,23 @@ import { RestService } from '../../../../data/services/rest.service';
 })
 export class SidebarComponent implements OnInit {
   public navLinksList: NavLink[];
+  public userData: UserData;
+
   public activeNav: number;
 
   @Output() toggleRideView = new EventEmitter<boolean>();
 
   constructor(private rest: RestService) {
+    this.userData = {
+      id: 0,
+      user_name: '',
+      user_desc: '',
+      user_img: '',
+    };
+
     this.getNavLinkData();
+    this.getUserData();
+
     this.activeNav = 1;
   }
 
@@ -23,6 +35,12 @@ export class SidebarComponent implements OnInit {
   public getNavLinkData() {
     this.rest.getNavLinksData().subscribe((res) => {
       this.navLinksList = res;
+    });
+  }
+
+  public getUserData() {
+    this.rest.getUserData().subscribe((res) => {
+      this.userData = res;
     });
   }
 
