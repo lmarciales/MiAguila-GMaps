@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ConstantsService } from '@core/services/constants.service';
 import { Observable } from 'rxjs';
+import { DefaultRoute } from '../schema/default-route';
 import { FavoriteList } from '../schema/favorite-list';
 import { NavLink } from '../schema/nav-link';
 import { RideProfile } from '../schema/ride-profile';
@@ -17,14 +18,16 @@ export class RestService {
   private readonly USER_DATA_URL: string;
   private readonly RIDE_PROFILE_URL: string;
   private readonly STEP_DATA_URL: string;
-  private readonly FAVORITE_LISTA_URL: string;
+  private readonly FAVORITE_LIST_URL: string;
+  private readonly DEFAULT_ROUTE_URL: string;
 
   constructor(private http: HttpClient, private consts: ConstantsService) {
     this.NAV_LINKS_URL = consts.getNavLinksUrl();
     this.USER_DATA_URL = consts.getUserDataUrl();
     this.RIDE_PROFILE_URL = consts.getRideProfileUrl();
     this.STEP_DATA_URL = consts.getStepDataUrl();
-    this.FAVORITE_LISTA_URL = consts.getFavoriteListUrl();
+    this.FAVORITE_LIST_URL = consts.getFavoriteListUrl();
+    this.DEFAULT_ROUTE_URL = consts.getDefaultRouteUrl();
   }
 
   public getNavLinksData(): Observable<NavLink[]> {
@@ -44,6 +47,10 @@ export class RestService {
   }
 
   public getFavoriteListData(): Observable<FavoriteList[]> {
-    return this.http.get<FavoriteList[]>(this.FAVORITE_LISTA_URL);
+    return this.http.get<FavoriteList[]>(this.FAVORITE_LIST_URL);
+  }
+
+  public getDefaultRouteData(): Observable<DefaultRoute> {
+    return this.http.get<DefaultRoute>(this.DEFAULT_ROUTE_URL);
   }
 }

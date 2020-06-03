@@ -12,6 +12,7 @@ export class ConstantsService {
   private BASE_RIDE_PROFILE = '/ride-profile';
   private BASE_STEPS_DATA = '/steps-data';
   private BASE_FAVORITE_LIST = '/favorite-list';
+  private BASE_DEFAULT_ROUTE = '/default-route';
 
   constructor() {}
 
@@ -33,5 +34,9 @@ export class ConstantsService {
 
   public getFavoriteListUrl(): string {
     return this.BASE_URL + this.BASE_FAVORITE_LIST;
+  }
+
+  public getDefaultRouteUrl(): string {
+    return this.BASE_URL + this.BASE_DEFAULT_ROUTE;
   }
 }
