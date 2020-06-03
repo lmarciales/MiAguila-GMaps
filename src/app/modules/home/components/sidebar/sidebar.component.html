@@ -19,30 +19,11 @@
   </div>
   <nav class="sidebar-links">
     <ul>
-      <a [routerLink]="">
-        <li>Pedir Aguila</li>
-      </a>
-      <a [routerLink]="">
-        <li>Vuelos</li>
-      </a>
-      <a [routerLink]="">
-        <li>Rutas</li>
-      </a>
-      <a [routerLink]="">
-        <li>Administrar</li>
-      </a>
-
-      <a [routerLink]="">
-        <li>Estadisticas</li>
-      </a>
-
-      <a [routerLink]="">
-        <li>Metodos de pago</li>
-      </a>
-
-      <a [routerLink]="">
-        <li>Cerrar Sesión</li>
-      </a>
+      <ng-container *ngFor="let item of navLinksList">
+        <li (click)="getSelectedNavItem(item.id)" [ngClass]="{ active: item.id === activeNav }">
+          <i class="fas {{ item.fa_icon }}"></i> {{ item.item_name }}
+        </li>
+      </ng-container>
     </ul>
   </nav>
 </section>

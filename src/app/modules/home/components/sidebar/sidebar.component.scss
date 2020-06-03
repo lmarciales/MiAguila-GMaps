@@ -1,3 +1,5 @@
+@import 'partials';
+
 .sidebar {
   .brand-logo {
     margin: 10px;
@@ -9,9 +11,49 @@
     align-items: center;
     flex-direction: column;
     max-width: fit-content;
-    margin: 0 auto 10px;
-    //box-shadow: 1px 3px 11px #ccc;
-    border-bottom: 2px;
-    //border-radius: 1em;
+    margin: 20px auto;
+    border-bottom: 2px solid #e1e1e1;
+
+    img {
+      border-radius: 100%;
+      margin-bottom: 10px;
+    }
+
+    h4,
+    p {
+      @extend %mp-o;
+    }
+
+    p {
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .sidebar-links {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        padding-left: 40px;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        align-items: center;
+
+        &.active {
+          border-left: 3px solid #4cae4c;
+          background-color: #e1e1e1;
+          font-weight: bold;
+        }
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }

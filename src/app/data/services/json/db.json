@@ -1,0 +1,40 @@
+{
+  "user-data": {},
+  "nav-links": [
+    {
+      "id": 1,
+      "item_name": "Pedir Aguila",
+      "fa_icon": "fa-car-side"
+    },
+    {
+      "id": 2,
+      "item_name": "Vuelos",
+      "fa_icon": "fa-map-marker-alt"
+    },
+    {
+      "id": 3,
+      "item_name": "Rutas",
+      "fa_icon": "fa-route"
+    },
+    {
+      "id": 4,
+      "item_name": "Administrar",
+      "fa_icon": "fa-tachometer-alt"
+    },
+    {
+      "id": 5,
+      "item_name": "Estadisticas",
+      "fa_icon": "fa-chart-bar"
+    },
+    {
+      "id": 6,
+      "item_name": "Metodos de pago",
+      "fa_icon": "fa-wallet"
+    },
+    {
+      "id": 7,
+      "item_name": "Cerrar Sesión",
+      "fa_icon": "fa-sign-out-alt"
+    }
+  ]
+}
