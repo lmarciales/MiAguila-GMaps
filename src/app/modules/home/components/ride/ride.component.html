@@ -1,0 +1,43 @@
+<section class="ride-menu">
+  <div class="user-type">
+    <div class="profile" *ngFor="let profile of rideProfile">
+      <img class="profile-img" src="{{ profile.profile_img }}" alt="{{ profile.profile_name }}" />
+      <span class="profile-text">{{ profile.profile_name }}</span>
+    </div>
+  </div>
+
+  <div class="steps-ride">
+    <ng-container *ngFor="let step of stepData">
+      <div class="step" (click)="toggleStep(step.step_number, step.step_route)">
+        <div class="step-number" [ngClass]="{ active: stepNumber === step.step_number, disable: step.step_number > 2 }">
+          {{ step.step_number }}
+        </div>
+        <span class="step-label" [ngClass]="{ hide: stepNumber !== step.step_number }">{{ step.step_label }}</span>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="address">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="favorite-list">
+    <span class="favorite-title">Favoritos</span>
+    <div class="favorite-item" *ngFor="let favorite of favoriteList" (click)="changeDirection(favorite)">
+      <img src="https://via.placeholder.com/100" alt="{{ favorite.favorite_name }}" class="favorite-icon" />
+      <div class="favorite-details">
+        <span class="favorite-name">{{ favorite.favorite_name }}</span>
+        <span class="favorite-address">{{ favorite.favorite_address }}</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="action">
+      <i class="fas fa-arrow-left"></i>
+    </div>
+    <div class="action">
+      <i class="fas fa-arrow-right"></i>
+    </div>
+  </footer>
+</section>

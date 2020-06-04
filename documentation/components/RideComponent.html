@@ -1,0 +1,1281 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>mi-aguila-gmaps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">mi-aguila-gmaps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>RideComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/home/components/ride/ride.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Luis Felipe Marciales Piñeros (<a href="mailto:fmarcialesp@gmail.com">fmarcialesp@gmail.com</a>)</p>
+<p>Ride component: Shows the view where the user can choose the profile type, address and favorites.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-ride</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./ride.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./ride.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#favoriteList">favoriteList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#rideProfile">rideProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#stepData">stepData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#stepNumber">stepNumber</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#changeDirection">changeDirection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getFavoriteListaData">getFavoriteListaData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getRideProfileData">getRideProfileData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getStepData">getStepData</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toggleStep">toggleStep</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#defaultRoute">defaultRoute</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#newRoute">newRoute</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, rest: <a href="../injectables/RestService.html">RestService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rest</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RestService.html" target="_self" >RestService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="defaultRoute"></a>
+                        <b>defaultRoute</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/DefaultRoute.html" target="_self" >DefaultRoute</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:43</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Get the route that is drawn in the map.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="newRoute"></a>
+                        <b>newRoute</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:45</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeDirection"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            changeDirection
+                        </b>
+                        <a href="#changeDirection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>changeDirection(favorite: <a href="../interfaces/FavoriteList.html">FavoriteList</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to send a new address to the map draw.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>favorite</td>
+                                    <td>
+                                                <code><a href="../interfaces/FavoriteList.html" target="_self" >FavoriteList</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Favorite address selected</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFavoriteListaData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getFavoriteListaData
+                        </b>
+                        <a href="#getFavoriteListaData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getFavoriteListaData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the favorite list data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRideProfileData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getRideProfileData
+                        </b>
+                        <a href="#getRideProfileData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRideProfileData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the profile data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStepData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getStepData
+                        </b>
+                        <a href="#getStepData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getStepData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the step data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleStep"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            toggleStep
+                        </b>
+                        <a href="#toggleStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toggleStep(stepNumber: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, stepRouter: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Function to switch between steps</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepNumber</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Step number from selected step</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>stepRouter</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Step router from selected step</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="favoriteList"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            favoriteList</b>
+                            <a href="#favoriteList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/FavoriteList.html" target="_self" >FavoriteList[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Data for favorite info</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rideProfile"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            rideProfile</b>
+                            <a href="#rideProfile"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/RideProfile.html" target="_self" >RideProfile[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Data for profile info</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepData"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            stepData</b>
+                            <a href="#stepData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/StepsData.html" target="_self" >StepsData[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Data for step info</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepNumber"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            stepNumber</b>
+                            <a href="#stepNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/home/components/ride/ride.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Flag for the current step</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { DefaultRoute } from &#x27;../../../../data/schema/default-route&#x27;;
+import { FavoriteList } from &#x27;../../../../data/schema/favorite-list&#x27;;
+import { RideProfile } from &#x27;../../../../data/schema/ride-profile&#x27;;
+import { StepsData } from &#x27;../../../../data/schema/steps-data&#x27;;
+import { RestService } from &#x27;../../../../data/services/rest.service&#x27;;
+
+/**
+ * Luis Felipe Marciales Piñeros (fmarcialesp@gmail.com)
+ *
+ * Ride component: Shows the view where the user can choose the profile type, address and favorites.
+ */
+@Component({
+  selector: &#x27;app-ride&#x27;,
+  templateUrl: &#x27;./ride.component.html&#x27;,
+  styleUrls: [&#x27;./ride.component.scss&#x27;],
+})
+export class RideComponent implements OnInit {
+  /**
+   * Data for profile info
+   */
+  public rideProfile: RideProfile[];
+
+  /**
+   * Data for step info
+   */
+  public stepData: StepsData[];
+
+  /**
+   * Data for favorite info
+   */
+  public favoriteList: FavoriteList[];
+
+  /**
+   * Flag for the current step
+   */
+  public stepNumber: number;
+
+  /**
+   * Get the route that is drawn in the map.
+   */
+  @Input() defaultRoute: DefaultRoute;
+
+  @Output() newRoute &#x3D; new EventEmitter&lt;DefaultRoute&gt;();
+
+  constructor(private router: Router, private rest: RestService) {
+    router.navigate([&#x27;ride/origin&#x27;]);
+    this.getRideProfileData();
+    this.getStepData();
+    this.getFavoriteListaData();
+    this.stepNumber &#x3D; 1;
+  }
+
+  ngOnInit(): void {
+  }
+
+  /**
+   * Get the profile data
+   */
+  public getRideProfileData() {
+    this.rest.getRideProfileData().subscribe((res) &#x3D;&gt; {
+      this.rideProfile &#x3D; res;
+    });
+  }
+
+  /**
+   * Get the step data
+   */
+  public getStepData() {
+    this.rest.getStepData().subscribe((res) &#x3D;&gt; {
+      this.stepData &#x3D; res;
+    });
+  }
+
+  /**
+   * Get the favorite list data
+   */
+  public getFavoriteListaData() {
+    this.rest.getFavoriteListData().subscribe((res) &#x3D;&gt; {
+      this.favoriteList &#x3D; res;
+    });
+  }
+
+  /**
+   * Function to switch between steps
+   * @param stepNumber Step number from selected step
+   * @param stepRouter Step router from selected step
+   */
+  public toggleStep(stepNumber: number, stepRouter: string) {
+    if (stepRouter.length &gt; 0) {
+      this.stepNumber &#x3D; stepNumber;
+      this.router.navigate([stepRouter]);
+    }
+  }
+
+  /**
+   * Function to send a new address to the map draw.
+   * @param favorite Favorite address selected
+   */
+  public changeDirection(favorite: FavoriteList) {
+    if (this.stepNumber &#x3D;&#x3D;&#x3D; 1) {
+      this.defaultRoute.origin &#x3D; {
+        lat: favorite.lat,
+        lng: favorite.lng,
+      };
+    } else {
+      this.defaultRoute.destination &#x3D; {
+        lat: favorite.lat,
+        lng: favorite.lng,
+      };
+    }
+    this.newRoute.emit(this.defaultRoute);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;ride-menu&quot;&gt;
+  &lt;div class&#x3D;&quot;user-type&quot;&gt;
+    &lt;div class&#x3D;&quot;profile&quot; *ngFor&#x3D;&quot;let profile of rideProfile&quot;&gt;
+      &lt;img class&#x3D;&quot;profile-img&quot; src&#x3D;&quot;{{ profile.profile_img }}&quot; alt&#x3D;&quot;{{ profile.profile_name }}&quot; /&gt;
+      &lt;span class&#x3D;&quot;profile-text&quot;&gt;{{ profile.profile_name }}&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;steps-ride&quot;&gt;
+    &lt;ng-container *ngFor&#x3D;&quot;let step of stepData&quot;&gt;
+      &lt;div class&#x3D;&quot;step&quot; (click)&#x3D;&quot;toggleStep(step.step_number, step.step_route)&quot;&gt;
+        &lt;div class&#x3D;&quot;step-number&quot; [ngClass]&#x3D;&quot;{ active: stepNumber &#x3D;&#x3D;&#x3D; step.step_number, disable: step.step_number &gt; 2 }&quot;&gt;
+          {{ step.step_number }}
+        &lt;/div&gt;
+        &lt;span class&#x3D;&quot;step-label&quot; [ngClass]&#x3D;&quot;{ hide: stepNumber !&#x3D;&#x3D; step.step_number }&quot;&gt;{{ step.step_label }}&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/ng-container&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;address&quot;&gt;
+    &lt;router-outlet&gt;&lt;/router-outlet&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;favorite-list&quot;&gt;
+    &lt;span class&#x3D;&quot;favorite-title&quot;&gt;Favoritos&lt;/span&gt;
+    &lt;div class&#x3D;&quot;favorite-item&quot; *ngFor&#x3D;&quot;let favorite of favoriteList&quot; (click)&#x3D;&quot;changeDirection(favorite)&quot;&gt;
+      &lt;img src&#x3D;&quot;https://via.placeholder.com/100&quot; alt&#x3D;&quot;{{ favorite.favorite_name }}&quot; class&#x3D;&quot;favorite-icon&quot; /&gt;
+      &lt;div class&#x3D;&quot;favorite-details&quot;&gt;
+        &lt;span class&#x3D;&quot;favorite-name&quot;&gt;{{ favorite.favorite_name }}&lt;/span&gt;
+        &lt;span class&#x3D;&quot;favorite-address&quot;&gt;{{ favorite.favorite_address }}&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;footer&gt;
+    &lt;div class&#x3D;&quot;action&quot;&gt;
+      &lt;i class&#x3D;&quot;fas fa-arrow-left&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;action&quot;&gt;
+      &lt;i class&#x3D;&quot;fas fa-arrow-right&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/section&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./ride.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.ride-menu {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(to bottom, #33374c 0%, #33374c 8.5%, white 8.5%, white 100%);
+
+  @media only screen and (max-width: 768px) {
+    height: 638px;
+    z-index: 999;
+  }
+
+  .user-type {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    position: inherit;
+    top: 15px;
+    right: 0;
+    left: 0;
+    margin: 0 15px;
+    padding: 0 20px;
+    box-shadow: 0 0 1px 1px #999999;
+    border-radius: 2px;
+    background: white;
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .profile-img {
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+      }
+
+      .profile-text {
+        font-size: 10px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .steps-ride {
+    display: flex;
+    margin: 30px 15px 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+
+    .step {
+      display: flex;
+      align-items: flex-end;
+      outline: none;
+
+      .step-number {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        border: 1px solid;
+        border-radius: 100%;
+        color: #999999;
+        cursor: pointer;
+
+        &amp;.active {
+          color: #bfdebf;
+        }
+
+        &amp;.disable {
+          cursor: no-drop;
+        }
+      }
+
+      .step-label {
+        font-size: 12px;
+        width: 200px;
+
+        @media only screen and (max-width: 768px) {
+          width: 570px;
+        }
+
+        @media only screen and (max-width: 425px) {
+          width: 225px;
+        }
+
+        @media only screen and (max-width: 375px) {
+          width: 175px;
+        }
+
+        @media only screen and (max-width: 320px) {
+          width: 120px;
+        }
+
+        &amp;.hide {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .favorite-list {
+    height: 310px;
+    margin-left: 15px;
+    overflow: auto;
+    padding-top: 10px;
+
+    .favorite-title {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .favorite-item {
+      display: flex;
+      align-items: center;
+      margin: 15px;
+      cursor: pointer;
+
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        margin-right: 10px;
+      }
+
+      .favorite-details {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+
+        .favorite-name {
+          font-weight: bold;
+          margin-bottom: 2px;
+        }
+
+        .favorite-address {
+          color: #999999;
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: -webkit-fill-available;
+    border-top: 1px solid #e1e1e1;
+    padding: 10px;
+    background: white;
+
+    .action {
+      display: grid;
+      height: 50px;
+      width: 50px;
+      border-radius: 2px;
+      background: #e1e1e1;
+      cursor: pointer;
+    }
+
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #999999;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><section class="ride-menu">  <div class="user-type">    <div class="profile" *ngFor="let profile of rideProfile">      <img class="profile-img" src="{{ profile.profile_img }}" alt="{{ profile.profile_name }}" />      <span class="profile-text">{{ profile.profile_name }}</span>    </div>  </div>  <div class="steps-ride">    <ng-container *ngFor="let step of stepData">      <div class="step" (click)="toggleStep(step.step_number, step.step_route)">        <div class="step-number" [ngClass]="{ active: stepNumber === step.step_number, disable: step.step_number > 2 }">          {{ step.step_number }}        </div>        <span class="step-label" [ngClass]="{ hide: stepNumber !== step.step_number }">{{ step.step_label }}</span>      </div>    </ng-container>  </div>  <div class="address">    <router-outlet></router-outlet>  </div>  <div class="favorite-list">    <span class="favorite-title">Favoritos</span>    <div class="favorite-item" *ngFor="let favorite of favoriteList" (click)="changeDirection(favorite)">      <img src="https://via.placeholder.com/100" alt="{{ favorite.favorite_name }}" class="favorite-icon" />      <div class="favorite-details">        <span class="favorite-name">{{ favorite.favorite_name }}</span>        <span class="favorite-address">{{ favorite.favorite_address }}</span>      </div>    </div>  </div>  <footer>    <div class="action">      <i class="fas fa-arrow-left"></i>    </div>    <div class="action">      <i class="fas fa-arrow-right"></i>    </div>  </footer></section></div>'
+    var COMPONENTS = [{'name': 'AddressBoxComponent', 'selector': 'app-address-box'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DestinationComponent', 'selector': 'app-destination'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'MapsComponent', 'selector': 'app-maps'},{'name': 'OriginComponent', 'selector': 'app-origin'},{'name': 'RideComponent', 'selector': 'app-ride'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'RideComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RideComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1068 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>mi-aguila-gmaps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">mi-aguila-gmaps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SidebarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/home/components/sidebar/sidebar.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Luis Felipe Marciales Piñeros (<a href="mailto:fmarcialesp@gmail.com">fmarcialesp@gmail.com</a>)</p>
+<p>Sidebar component: Shows the user data and important links.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-sidebar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./sidebar.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sidebar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#activeNav">activeNav</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#mobileView">mobileView</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#navLinksList">navLinksList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userData">userData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getNavLinkData">getNavLinkData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getSelectedNavItem">getSelectedNavItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getUserData">getUserData</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toggleMobileMenu">toggleMobileMenu</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#toggleRideView">toggleRideView</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#window:resize">window:resize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(rest: <a href="../injectables/RestService.html">RestService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>rest</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RestService.html" target="_self" >RestService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toggleRideView"></a>
+                        <b>toggleRideView</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:38</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:resize"></a>
+                    <span class="name">
+                        <b>
+                            window:resize
+                        </b>
+                        <a href="#window:resize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <i>Arguments : </i><code>'$event' </code>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:resize()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the window size for the current screen</p>
+</div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNavLinkData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getNavLinkData
+                        </b>
+                        <a href="#getNavLinkData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getNavLinkData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the nav link data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSelectedNavItem"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getSelectedNavItem
+                        </b>
+                        <a href="#getSelectedNavItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSelectedNavItem(itemId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the item selected from nav links</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>itemId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Item list selected</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserData"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getUserData
+                        </b>
+                        <a href="#getUserData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the user data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleMobileMenu"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            toggleMobileMenu
+                        </b>
+                        <a href="#toggleMobileMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toggleMobileMenu()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Toggle view depending on the window size</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activeNav"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            activeNav</b>
+                            <a href="#activeNav"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Flag for the active item link</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mobileView"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            mobileView</b>
+                            <a href="#mobileView"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Flag for the responsive view</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="navLinksList"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            navLinksList</b>
+                            <a href="#navLinksList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/NavLink.html" target="_self" >NavLink[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Nav link info</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userData"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            userData</b>
+                            <a href="#userData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/UserData.html" target="_self" >UserData</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/home/components/sidebar/sidebar.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>User data info</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, HostListener, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { NavLink } from &#x27;../../../../data/schema/nav-link&#x27;;
+import { UserData } from &#x27;../../../../data/schema/user-data&#x27;;
+import { RestService } from &#x27;../../../../data/services/rest.service&#x27;;
+
+/**
+ * Luis Felipe Marciales Piñeros (fmarcialesp@gmail.com)
+ *
+ * Sidebar component: Shows the user data and important links.
+ */
+@Component({
+  selector: &#x27;app-sidebar&#x27;,
+  templateUrl: &#x27;./sidebar.component.html&#x27;,
+  styleUrls: [&#x27;./sidebar.component.scss&#x27;],
+})
+export class SidebarComponent implements OnInit {
+
+  /**
+   * User data info
+   */
+  public userData: UserData;
+
+  /**
+   * Nav link info
+   */
+  public navLinksList: NavLink[];
+
+  /**
+   * Flag for the active item link
+   */
+  public activeNav: number;
+
+  /**
+   * Flag for the responsive view
+   */
+  public mobileView: boolean;
+
+  @Output() toggleRideView &#x3D; new EventEmitter&lt;boolean&gt;();
+
+  constructor(private rest: RestService) {
+    this.userData &#x3D; {
+      id: 0,
+      user_name: &#x27;&#x27;,
+      user_desc: &#x27;&#x27;,
+      user_img: &#x27;&#x27;,
+    };
+
+    this.getNavLinkData();
+    this.getUserData();
+
+    this.activeNav &#x3D; 1;
+
+    this.mobileView &#x3D; false;
+    this.getScreenSize();
+  }
+
+  ngOnInit(): void {
+  }
+
+  /**
+   * Get the nav link data
+   */
+  public getNavLinkData() {
+    this.rest.getNavLinksData().subscribe((res) &#x3D;&gt; {
+      this.navLinksList &#x3D; res;
+    });
+  }
+
+  /**
+   * Get the user data
+   */
+  public getUserData() {
+    this.rest.getUserData().subscribe((res) &#x3D;&gt; {
+      this.userData &#x3D; res;
+    });
+  }
+
+  /**
+   * Get the item selected from nav links
+   * @param itemId Item list selected
+   */
+  public getSelectedNavItem(itemId: number) {
+    this.activeNav &#x3D; itemId;
+
+    if (this.activeNav &#x3D;&#x3D;&#x3D; 1) {
+      this.toggleRideView.emit(true);
+    } else {
+      this.toggleRideView.emit(false);
+    }
+  }
+
+  /**
+   * Get the window size for the current screen
+   */
+  @HostListener(&#x27;window:resize&#x27;, [&#x27;$event&#x27;])
+  public getScreenSize() {
+    const screenWidth &#x3D; window.innerWidth;
+    if (screenWidth &lt;&#x3D; 768) {
+      this.mobileView &#x3D; true;
+    }
+  }
+
+  /**
+   * Toggle view depending on the window size
+   */
+  public toggleMobileMenu() {
+    this.mobileView &#x3D; !this.mobileView;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;sidebar&quot;&gt;
+  &lt;div class&#x3D;&quot;brand-logo&quot;&gt;
+    &lt;svg width&#x3D;&quot;115&quot; height&#x3D;&quot;25&quot; viewBox&#x3D;&quot;0 0 180 40&quot; fill&#x3D;&quot;none&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; data-v-6c00d83e&#x3D;&quot;&quot;&gt;
+      &lt;path
+        d&#x3D;&quot;M18.86 15.868a1.99 1.99 0 01-1.985 1.984 1.868 1.868 0 01-1.39-.595l-3.375-3.372h4.798c1.084.018 1.952.9 1.952 1.983zm20.813 3.868a19.815 19.815 0 01-9.845 17.274 19.853 19.853 0 01-19.896.05A19.815 19.815 0 010 19.835c0-2.96.655-5.884 1.92-8.562L0 7.934h15.882c7.676 0 13.897 6.217 13.897 13.885v3.967h-4.996a14.63 14.63 0 00-7.213 1.917l-7.71 4.463c2.82 2.3 6.353 3.55 9.993 3.537a15.882 15.882 0 0014.9-10.342 15.858 15.858 0 00-4.528-17.554 15.894 15.894 0 00-18.049-1.856H5.692A19.833 19.833 0 0127.31 1.457a19.802 19.802 0 0112.363 18.279zM7.048 29.191l9.364-5.389a15.023 15.023 0 017.445-1.983h1.952a9.9 9.9 0 00-2.904-7.017 9.918 9.918 0 00-7.023-2.9H6.088a15.832 15.832 0 00.96 17.289z&quot;
+        fill&#x3D;&quot;#0C9&quot;
+      &gt;&lt;/path&gt;
+      &lt;path
+        d&#x3D;&quot;M73.158 25.785V11.901h2.713v13.884h-2.713zM96.485 13.62l6.551 12.165h-2.845l-.066-.165c-.464-.562-3.971-1.884-7.346-1.884h-1.654l-1.092 2.05h-2.978l7.411-13.852h2.945l-.926 1.686zm-3.706 7.67c2.846 0 4.665.727 5.559 1.19l-3.243-6.215-2.68 5.024h.364zM142.975 25.785v-13.85h2.713v13.85h-2.713zM151.61 25.785v-13.85h2.846v11.14h7.279v2.71H151.61zM169.346 11.9h2.945l7.411 13.852h-2.978l-1.092-2.05h-1.654c-3.375 0-6.915 1.323-7.346 1.885l-.066.165h-2.845l6.551-12.165-.926-1.686zm4.963 9.39l-2.68-5.025-3.243 6.214a12.295 12.295 0 015.559-1.19h.364zM130.368 26.182c-3.805 0-6.585-1.752-6.585-5.72v-8.561h2.713v8.562c0 2.314 1.556 3.008 3.872 3.008s3.871-.694 3.871-3.008V11.9h2.713v8.562c0 3.967-2.779 5.719-6.584 5.719zM118.588 24.265a8.685 8.685 0 01-5.625 1.95c-4.136 0-8.073-2.678-8.073-7.24 0-4.595 4.003-7.173 8.073-7.173 1.965-.04 3.89.55 5.493 1.686l-1.82 2.082a6.717 6.717 0 00-3.673-1.058c-2.647 0-5.195 1.455-5.195 4.496 0 3.075 2.614 4.463 5.228 4.463a6.265 6.265 0 002.879-.694v-2.182h-1.39l-1.158-2.545h5.261v6.215zM67.235 14.083v11.702h-2.978v-8.264l-4.83 6.38-4.832-6.38v8.264h-2.978V14.083L50.261 11.9h3.342l5.856 7.67 5.857-7.67h3.342l-1.423 2.182z&quot;
+        fill&#x3D;&quot;#000&quot;
+      &gt;&lt;/path&gt;
+      &lt;path d&#x3D;&quot;M99.496 7.934l-1.059 1.984h-2.912l1.06-1.984h2.911z&quot; fill&#x3D;&quot;#0C9&quot;&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;div class&#x3D;&quot;menu-mobile&quot; (click)&#x3D;&quot;toggleMobileMenu()&quot;&gt;
+      &lt;i class&#x3D;&quot;fas fa-bars&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;user-profile&quot; *ngIf&#x3D;&quot;!mobileView&quot;&gt;
+    &lt;img src&#x3D;&quot;{{ userData.user_img }}&quot; alt&#x3D;&quot;{{ userData.user_name }}&quot; /&gt;
+    &lt;h4&gt;{{ userData.user_name }}&lt;/h4&gt;
+    &lt;p&gt;{{ userData.user_desc }}&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;nav class&#x3D;&quot;sidebar-links&quot; *ngIf&#x3D;&quot;!mobileView&quot;&gt;
+    &lt;ul&gt;
+      &lt;ng-container *ngFor&#x3D;&quot;let item of navLinksList&quot;&gt;
+        &lt;li (click)&#x3D;&quot;getSelectedNavItem(item.id)&quot; [ngClass]&#x3D;&quot;{ active: item.id &#x3D;&#x3D;&#x3D; activeNav }&quot;&gt;
+          &lt;i class&#x3D;&quot;fas {{ item.fa_icon }}&quot;&gt;&lt;/i&gt; {{ item.item_name }}
+        &lt;/li&gt;
+      &lt;/ng-container&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/section&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./sidebar.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;partials&#x27;;
+
+.sidebar {
+  .brand-logo {
+    margin: 10px;
+
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu-mobile {
+      display: none;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  .user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 20px auto;
+    border-bottom: 2px solid #e1e1e1;
+
+    img {
+      border-radius: 100%;
+      margin-bottom: 10px;
+    }
+
+    h4,
+    p {
+      @extend %mp-o;
+    }
+
+    p {
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .sidebar-links {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        padding-left: 40px;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        align-items: center;
+
+        &amp;.active {
+          border-left: 3px solid #4cae4c;
+          background-color: #e1e1e1;
+          font-weight: bold;
+        }
+
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><section class="sidebar">  <div class="brand-logo">    <svg width="115" height="25" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-6c00d83e="">      <path        d="M18.86 15.868a1.99 1.99 0 01-1.985 1.984 1.868 1.868 0 01-1.39-.595l-3.375-3.372h4.798c1.084.018 1.952.9 1.952 1.983zm20.813 3.868a19.815 19.815 0 01-9.845 17.274 19.853 19.853 0 01-19.896.05A19.815 19.815 0 010 19.835c0-2.96.655-5.884 1.92-8.562L0 7.934h15.882c7.676 0 13.897 6.217 13.897 13.885v3.967h-4.996a14.63 14.63 0 00-7.213 1.917l-7.71 4.463c2.82 2.3 6.353 3.55 9.993 3.537a15.882 15.882 0 0014.9-10.342 15.858 15.858 0 00-4.528-17.554 15.894 15.894 0 00-18.049-1.856H5.692A19.833 19.833 0 0127.31 1.457a19.802 19.802 0 0112.363 18.279zM7.048 29.191l9.364-5.389a15.023 15.023 0 017.445-1.983h1.952a9.9 9.9 0 00-2.904-7.017 9.918 9.918 0 00-7.023-2.9H6.088a15.832 15.832 0 00.96 17.289z"        fill="#0C9"      ></path>      <path        d="M73.158 25.785V11.901h2.713v13.884h-2.713zM96.485 13.62l6.551 12.165h-2.845l-.066-.165c-.464-.562-3.971-1.884-7.346-1.884h-1.654l-1.092 2.05h-2.978l7.411-13.852h2.945l-.926 1.686zm-3.706 7.67c2.846 0 4.665.727 5.559 1.19l-3.243-6.215-2.68 5.024h.364zM142.975 25.785v-13.85h2.713v13.85h-2.713zM151.61 25.785v-13.85h2.846v11.14h7.279v2.71H151.61zM169.346 11.9h2.945l7.411 13.852h-2.978l-1.092-2.05h-1.654c-3.375 0-6.915 1.323-7.346 1.885l-.066.165h-2.845l6.551-12.165-.926-1.686zm4.963 9.39l-2.68-5.025-3.243 6.214a12.295 12.295 0 015.559-1.19h.364zM130.368 26.182c-3.805 0-6.585-1.752-6.585-5.72v-8.561h2.713v8.562c0 2.314 1.556 3.008 3.872 3.008s3.871-.694 3.871-3.008V11.9h2.713v8.562c0 3.967-2.779 5.719-6.584 5.719zM118.588 24.265a8.685 8.685 0 01-5.625 1.95c-4.136 0-8.073-2.678-8.073-7.24 0-4.595 4.003-7.173 8.073-7.173 1.965-.04 3.89.55 5.493 1.686l-1.82 2.082a6.717 6.717 0 00-3.673-1.058c-2.647 0-5.195 1.455-5.195 4.496 0 3.075 2.614 4.463 5.228 4.463a6.265 6.265 0 002.879-.694v-2.182h-1.39l-1.158-2.545h5.261v6.215zM67.235 14.083v11.702h-2.978v-8.264l-4.83 6.38-4.832-6.38v8.264h-2.978V14.083L50.261 11.9h3.342l5.856 7.67 5.857-7.67h3.342l-1.423 2.182z"        fill="#000"      ></path>      <path d="M99.496 7.934l-1.059 1.984h-2.912l1.06-1.984h2.911z" fill="#0C9"></path>    </svg>    <div class="menu-mobile" (click)="toggleMobileMenu()">      <i class="fas fa-bars"></i>    </div>  </div>  <div class="user-profile" *ngIf="!mobileView">    <img src="{{ userData.user_img }}" alt="{{ userData.user_name }}" />    <h4>{{ userData.user_name }}</h4>    <p>{{ userData.user_desc }}</p>  </div>  <nav class="sidebar-links" *ngIf="!mobileView">    <ul>      <ng-container *ngFor="let item of navLinksList">        <li (click)="getSelectedNavItem(item.id)" [ngClass]="{ active: item.id === activeNav }">          <i class="fas {{ item.fa_icon }}"></i> {{ item.item_name }}        </li>      </ng-container>    </ul>  </nav></section></div>'
+    var COMPONENTS = [{'name': 'AddressBoxComponent', 'selector': 'app-address-box'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DestinationComponent', 'selector': 'app-destination'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'MapsComponent', 'selector': 'app-maps'},{'name': 'OriginComponent', 'selector': 'app-origin'},{'name': 'RideComponent', 'selector': 'app-ride'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SidebarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SidebarComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
