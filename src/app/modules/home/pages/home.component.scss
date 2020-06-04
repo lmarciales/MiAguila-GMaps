@@ -10,6 +10,7 @@
   app-sidebar {
     border: 1px solid #e1e1e1;
     width: 320px;
+    z-index: 10000;
 
     @media only screen and (max-width: 768px) {
       width: 100%;
@@ -28,12 +29,13 @@
     width: 400px;
     height: 638px;
     box-shadow: 0 0 1px 1px #999999;
-    background: linear-gradient(to bottom, #33374c 0%, #33374c 8.5%, white 8.5%, white 100%);
-    z-index: 999;
+    z-index: 1;
 
     @media only screen and (max-width: 768px) {
       position: relative;
-      //width: 100%;
+      top: 0;
+      left: 0;
+      max-width: -webkit-fill-available;
     }
   }
 }
