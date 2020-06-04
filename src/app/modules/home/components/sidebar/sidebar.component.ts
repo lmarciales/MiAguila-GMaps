@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 import { NavLink } from '../../../../data/schema/nav-link';
 import { UserData } from '../../../../data/schema/user-data';
 import { RestService } from '../../../../data/services/rest.service';
@@ -14,6 +14,8 @@ export class SidebarComponent implements OnInit {
 
   public activeNav: number;
 
+  public mobileView: boolean;
+
   @Output() toggleRideView = new EventEmitter<boolean>();
 
   constructor(private rest: RestService) {
@@ -28,6 +30,9 @@ export class SidebarComponent implements OnInit {
     this.getUserData();
 
     this.activeNav = 1;
+
+    this.mobileView = false;
+    this.getScreenSize();
   }
 
   ngOnInit(): void {}
@@ -52,5 +57,17 @@ export class SidebarComponent implements OnInit {
     } else {
       this.toggleRideView.emit(false);
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  public getScreenSize() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 768) {
+      this.mobileView = true;
+    }
+  }
+
+  public toggleMobileMenu() {
+    this.mobileView = !this.mobileView;
   }
 }

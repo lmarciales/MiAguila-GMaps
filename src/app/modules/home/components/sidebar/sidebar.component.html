@@ -11,13 +11,16 @@
       ></path>
       <path d="M99.496 7.934l-1.059 1.984h-2.912l1.06-1.984h2.911z" fill="#0C9"></path>
     </svg>
+    <div class="menu-mobile" (click)="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
   </div>
-  <div class="user-profile">
+  <div class="user-profile" *ngIf="!mobileView">
     <img src="{{ userData.user_img }}" alt="{{ userData.user_name }}" />
     <h4>{{ userData.user_name }}</h4>
     <p>{{ userData.user_desc }}</p>
   </div>
-  <nav class="sidebar-links">
+  <nav class="sidebar-links" *ngIf="!mobileView">
     <ul>
       <ng-container *ngFor="let item of navLinksList">
         <li (click)="getSelectedNavItem(item.id)" [ngClass]="{ active: item.id === activeNav }">

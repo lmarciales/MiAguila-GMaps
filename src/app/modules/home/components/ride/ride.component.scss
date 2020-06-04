@@ -1,6 +1,12 @@
 .ride-menu {
   position: relative;
   height: 100%;
+  background: linear-gradient(to bottom, #33374c 0%, #33374c 8.5%, white 8.5%, white 100%);
+
+  @media only screen and (max-width: 768px) {
+    height: 638px;
+    z-index: 999;
+  }
 
   .user-type {
     display: flex;
@@ -70,6 +76,22 @@
       .step-label {
         font-size: 12px;
         width: 200px;
+
+        @media only screen and (max-width: 768px) {
+          width: 570px;
+        }
+
+        @media only screen and (max-width: 425px) {
+          width: 225px;
+        }
+
+        @media only screen and (max-width: 375px) {
+          width: 175px;
+        }
+
+        @media only screen and (max-width: 320px) {
+          width: 120px;
+        }
 
         &.hide {
           display: none;
