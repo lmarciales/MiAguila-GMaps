@@ -72,6 +72,12 @@ ng serve --o
 
 The server will be at localhost:4200
 
+### Install json-server
+
+```
+npm i -g json-server
+```
+
 ### Run the json-server
 
 ```
