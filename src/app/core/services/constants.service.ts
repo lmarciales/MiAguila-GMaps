@@ -1,11 +1,17 @@
 import { Injectable } from '@angular/core';
 import { environment } from '@env';
 
+/**
+ * Luis Felipe Marciales Piñeros (fmarcialesp@gmail.com)
+ *
+ * Utility operations for Constants management.
+ * Here you can see endpoints, shared text from services, views and components.
+ */
 @Injectable({
   providedIn: 'root',
 })
 export class ConstantsService {
-  // Routes
+  // ------------------- Routes -------------------
   private BASE_URL = environment.url;
   private BASE_NAV_LINKS = '/nav-links';
   private BASE_USER_DATA = '/user-data';
@@ -16,6 +22,7 @@ export class ConstantsService {
 
   constructor() {}
 
+  // ------------------- Routes Endpoints -------------------
   public getNavLinksUrl(): string {
     return this.BASE_URL + this.BASE_NAV_LINKS;
   }

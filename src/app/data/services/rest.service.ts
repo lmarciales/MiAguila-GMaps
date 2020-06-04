@@ -9,11 +9,16 @@ import { RideProfile } from '../schema/ride-profile';
 import { StepsData } from '../schema/steps-data';
 import { UserData } from '../schema/user-data';
 
+/**
+ * Luis Felipe Marciales Piñeros (fmarcialesp@gmail.com)
+ *
+ * Service that make all the calls to the rest services.
+ */
 @Injectable({
   providedIn: 'root',
 })
 export class RestService {
-  // Endpoints
+  // ------------------- Endpoints -------------------
   private readonly NAV_LINKS_URL: string;
   private readonly USER_DATA_URL: string;
   private readonly RIDE_PROFILE_URL: string;
@@ -30,6 +35,7 @@ export class RestService {
     this.DEFAULT_ROUTE_URL = consts.getDefaultRouteUrl();
   }
 
+  // ------------------- Endpoints Calls -------------------
   public getNavLinksData(): Observable<NavLink[]> {
     return this.http.get<NavLink[]>(this.NAV_LINKS_URL);
   }
